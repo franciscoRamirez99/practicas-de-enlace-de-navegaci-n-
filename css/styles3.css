@@ -1,0 +1,71 @@
+/* Variables */
+:root {
+    --color-primario: black;
+    --color-secundario: rgba(255, 255, 255, 0);
+    --color-destacado: rgba(255, 255, 255, 0);
+    --color-fondo: hsl(221, 100%, 49%);
+    --color-fondo-header: rgb(252, 101, 0);
+    --color-fondo-footer: black;
+    --shadow-header: 0 2px 4px rgb(0, 0, 0);
+    --font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para los enlaces */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--color-primario);
+    font-size: 18px;
+    font-weight: bold;
+    border: 2cm solid transparent;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilos para el enlace "Inicio" cuando el cursor está sobre él */
+  nav ul li.inicio a:hover {
+    color: var(--color-destacado);
+    border-color: var(--color-destacado);
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--color-fondo-header);
+    padding: 20px;
+    box-shadow: var(--shadow-header);
+  }
+  
+  h1 {
+    color: var(--color-primario);
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  footer {
+    background-color: var(--color-fondo-footer);
+    color: var(--color-secundario);
+    padding: 30px;
+    text-align: center;
+  }
+  
